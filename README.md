@@ -72,3 +72,18 @@ python -m jupyter nbconvert --to notebook --execute notebooks/01_exploration.ipy
 - Lot size has the most missing values: **1.74%**
 - The price distribution is strongly right-skewed and contains extreme values
 - Week 3 should handle duplicates, missing values, and unusual values before a time-based train/test split
+
+## Week 3 deliverables
+
+- `notebooks/02_preprocessing.ipynb` — fully executed preprocessing notebook
+- `data/processed/california_sfr_cleaned_week3.csv` — cleaned train/test data
+- `data/processed/week3_manifest.json` — reproducibility metadata
+- `docs/week3_report.md` — English written report
+- `docs/week3_presentation_script.md` — word-for-word presentation script and Q&A
+- `docs/week3_team_update.md` — concise team update and Week 4 plan
+
+Week 3 uses April 2025 through March 2026 as the provisional 12-month training window (129,716 rows) and holds out April 2026 for testing (12,031 rows). Run the new notebook with:
+
+```powershell
+python -m jupyter nbconvert --to notebook --execute notebooks/02_preprocessing.ipynb --inplace --ExecutePreprocessor.timeout=600
+```
