@@ -17,6 +17,7 @@ docs/task_brief.pdf
 
 # Future generated datasets and models
 data/processed/
+data/external/
 *.pkl
 *.joblib
 
