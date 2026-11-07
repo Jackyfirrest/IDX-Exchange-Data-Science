@@ -4,5 +4,6 @@ matplotlib
 seaborn
 jupyter
 scikit-learn
+xgboost
 geopandas<1.0
 shapely<2.1
